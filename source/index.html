@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/bootstrap.min.css" media = "screen">
+		<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<link rel = "stylesheet" href = "css/styleboot.css">
+		<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300italic' rel='stylesheet' type='text/css'>
+		<title>Evan's Portofolio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		
+		
+	</head>
+	<body id = "headline">
+		<div class="container">
+			<div class="row"  >
+				<div class="col-md-6">
+					
+					<h1 class = "font">Evan Yacek</h1>
+					<h3>B.S. Computational Biology</h3>
+				</div>
+				<div class="col-md-6" >
+					<img class="img-responsive" src="texas.png" align="right" height = "100" width = "100" style="PADDING-TOP: 5px">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<img class="img-responsive opaque" src="binaryImage.jpg" >
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class = "font">Featured Work</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<img class="img-responsive" src="python.png" data-toggle="modal" data-target="#project2" >
+					<h3>Python Projects</h3>
+					<p><a href="https://github.com/Eyacek/PythonProjects">Link to project</a></p>
+				</div>
+				<div class="col-md-6">
+					<img class="img-responsive" src="resumeGIF.gif">
+					<h3>Resume</h3>
+					<p><a href="EYresume.pdf">Link to project</a></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<img class="img-responsive" src="Rplot.png" data-toggle="modal" data-target="#project1">
+					<h3>Pima Analysis(R,Rstudio)</h3>
+					<p><a href="StatsCode.pdf">Link to project</a></p>
+				</div>
+				<div class="col-md-6">
+					<img class="img-responsive" src="linkedin.png">
+					<h3>LinkedIn</h3>
+					<p><a class = "limit" href="https://www.linkedin.com/in/evan-yacek-b16b3285">Link to project</a></p>
+				</div>
+			</div>
+		</div>
+	<!-- Modal -->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">PCA graph</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="pcaImage.png">
+					<p>
+                    Studies have shown that Pima women have a much higher incidence of Type II Diabetes than the general
+					population. Since the 1960s, NIH researchers have periodically asked Pima women to undergo various
+					medical tests in order to assess possible diabetes risk factors. Consequently, data on Pima women has
+					proven useful for predicting how likely an individual is to develop diabetes. [Source: J. W. Smith, J. E.
+					Everhart, W. C. Dickson, W. C. Knowler, and R. S. Johannes (1988)
+					This project aimed to predict incidence of diabetes as a function of the predictors:
+					</p>
+					<ul>
+					<li>+ **npreg**: number of times pregnant</li>
+					<li>+ **glucose**: plasma glucose concentration at 2 hours in an oral glucose tolerance test (units: mg/dL)</li>
+					<li>+ **dpb**: diastolic blood pressure (units: mm Hg)</li>
+					<li>+ **skin**: triceps skin-fold thickness (units: mm)</li>
+					<li>+ **insulin**: 2-hour serum insulin level (units: $\mu$U/mL)</li>
+					<li>+ **bmi**: Body Mass Index</li>
+					<li>+ **age**: age in years</li>
+					<li>+ **diabetic**: whether or not the individual has diabetes</li>
+					</ul>
+					Techniques used included constructing GLM, building ROC curves, and running a PCA analsysis along with
+					K-Means clustering. 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- Modal -->
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Learntris.py|Testris.py Sample Output</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="augershot.png">
+				
+					<p>
+                    The Link below contains various programming projects I completed in classes or on the side. 
+					Languages include:
+					</p>
+					<ul>
+					<li>#Python 2.5-3.5</li>
+					<li>#R</li>
+					<li>#SQL(Postgre, mySQL)</li>
+					<li>#Java</li>
+					<li>#Hadoop Mapreduce(Written in Python)</li>
+					</ul> 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	</body>
+</html>
